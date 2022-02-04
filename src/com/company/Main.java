@@ -61,7 +61,9 @@ public class Main {
 
         Søgning søgning = new Søgning();
         String[] arrayStrings = {"bobby","john","knud"};
-        System.out.println(søgning.search(arrayStrings,"bob"));
+        System.out.println(søgning.search(arrayStrings,"bobby"));
+
+        System.out.println(søgning.searchExept(arrayStrings,"bob"));
 
     }
 }

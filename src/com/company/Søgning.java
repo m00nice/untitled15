@@ -6,13 +6,22 @@ import java.util.Arrays;
 public class Søgning {
 
 
+    public int search(String[] Strings, String word) {
+        int result = -1;
 
-    public int search(String[] Strings, String word){
-        int result;
-        if(Arrays.asList(Strings).contains(word)){
-            result = Arrays.asList(Strings).indexOf(word);;
+            if (Arrays.asList(Strings).contains(word)) {
+                result = Arrays.asList(Strings).indexOf(word);
+
+            }
+
+            return result;
+    }
+    public int searchExept(String[] Strings, String word) {
+        try {
+            return Arrays.asList(Strings).indexOf(word);
+        } catch (Exception e){
+            System.out.println("Stringet findes ikke i arrayet");
         }
-
-    return result;
+        return 42;
     }
 }
