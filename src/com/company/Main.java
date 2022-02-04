@@ -40,10 +40,28 @@ public class Main {
 
 //5. Opgave
         ProperCase properCase = new ProperCase();
+        String sentence = "hundenW HUND RaR";
+        //Virker ikke ¯\_(ツ)_/¯
+        System.out.println(properCase.ProperCaseMaker(sentence));
 
-        System.out.println(properCase.ProperCaseMaker("Yo BINGbong Bon bing"));
+//6. Opgave
+
+        Sortering sortering = new Sortering();
+        sortering.words.add("abekat");
+        sortering.words.add("musefælde");
+        sortering.words.add("ananas");
+        sortering.words.add("slut");
+        sortering.words.add("solskin");
+
+        System.out.println(sortering.sortering());
 
 
+
+//7. Opgave
+
+        Søgning søgning = new Søgning();
+        String[] arrayStrings = {"bobby","john","knud"};
+        System.out.println(søgning.search(arrayStrings,"bob"));
 
     }
 }

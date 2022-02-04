@@ -1,18 +1,30 @@
 package com.company;
 
+
+
 public class ProperCase {
-public String bruh = "Yo BINGbong Bon bing";
+
 
     public String ProperCaseMaker(String sætning){
+        String nySætning = "";
+        String[] split = sætning.split(" ");
 
-        String split[] = sætning.split(" ");
+        for(String word : split){
+            String word2 = word.toUpperCase();
+            if(word.equals(word2)){
+                System.out.println("yo");
+            }else {
+                word.toLowerCase();
+                if (word.length() >= 3) {
+                    word.substring(0,1).toUpperCase();
+                }
+            }
 
-        for(int i =0; i < split.length;i++){
-
+            nySætning = nySætning+word+" ";
         }
 
 
 
-        return sætning;
+        return nySætning;
     }
 }
