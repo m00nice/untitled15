@@ -40,8 +40,7 @@ public class Main {
 
 //5. Opgave
         ProperCase properCase = new ProperCase();
-        String sentence = "hundenW HUND RaR";
-        //Virker ikke ¯\_(ツ)_/¯
+        String sentence = "hÅnden HUND RaR";
         System.out.println(properCase.ProperCaseMaker(sentence));
 
 //6. Opgave
